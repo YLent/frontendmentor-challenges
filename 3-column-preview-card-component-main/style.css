@@ -42,14 +42,18 @@ p {
 
 .cards {
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     padding: 5em;
     height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex: 1 1 300px;
 }
 
 .card-body {
     padding: 3rem;
+    height: 70%;
 }
 
 .card-body:first-of-type {
@@ -60,12 +64,17 @@ p {
     border-radius: 0 10px 10px 0;
 }
 
+.card-text {
+    height: 40%;
+}
+
 .card-button {
     text-decoration: none;
     background-color: hsl(0, 0%, 95%);
     border: 2px solid hsl(0, 0%, 95%);
     border-radius: 50px;
     padding: 1em 2em;
+    display: inline-block;
 }
 
 .sedans .card-button {
